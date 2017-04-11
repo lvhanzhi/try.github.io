@@ -1,0 +1,5 @@
+视频1：
+	1.去掉ul li中的小黑点  ul,li{list-style:none;}
+	2.一般的英文网站使用的字体 font-family:arial;
+	3.图片的边框去掉 img{test-decoration:none;}
+视频2：
