@@ -1,3 +1,0 @@
-ctrl+shift+d  复制当前行
-ctrl+x   删除当前行
-
