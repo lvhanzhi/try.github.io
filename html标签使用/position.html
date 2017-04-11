@@ -9,8 +9,8 @@
 			padding:0;
 		}
 		.zong{
-			width:99999px;
-			height:999999px;
+			width:900px;
+			height:900px;
 			border: 1px solid red;
 		}
 		.fen{
@@ -41,6 +41,27 @@
 			margin:5px;
 			/*fixed： 与absolute一致，但偏移定位是以窗口为参考。当出现滚动条时，对象不会随着滚动。*/
 		}
+		.zong2{
+			width:900px;
+			height:900px;
+			border: 1px solid green;
+		}
+		.s{
+			width:100px;
+			height:100px;
+			margin:50px 50px;
+		}
+		.s:nth-child(1){
+			
+			background-color: red;
+		}
+		.s:nth-child(2){
+			background-color: green;
+
+		}
+		.s:nth-child(3){
+			background-color: purple;
+		}
 	</style>
 </head>
 <body>
@@ -50,6 +71,11 @@
 			<div class="xiao"></div>
 			<div class="xiao"></div>
 		</div>
+	</div>
+	<div class="zong2">
+		<div class="s"></div>
+		<div class="s"></div>
+		<div class="s"></div>
 	</div>
 </body>
 </html>
