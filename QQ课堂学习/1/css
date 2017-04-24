@@ -1,0 +1,44 @@
+body,ul{
+	padding:0;
+	margin:0;
+}
+.menu{
+	box-shadow: 0 1px 2px 0 rgba(0,0,0,0.3);
+}
+.menu ul{
+	list-style-type: none;
+	display: inline-block;
+}
+.menu ul li{
+	display: inline-block;
+	border-left:
+}
+.menu{
+	background-color: orange;
+	height:48px;
+	text-align: center;
+}
+.menu a{
+	text-decoration: none;
+	font-family: "微软雅黑";
+	color: rgb(0,0,0);
+	display: inline-block;
+	width:200px;
+	height:48px;
+	border-left:1px solid rgba(0,0,0,0.4);
+	line-height: 48px;
+}
+.menu li:last-child{
+	border-right:1px solid rgba(0,0,0,0.4);
+}
+.menu a:hover{
+	color:rgb(255,255,255);
+}
+.menu a i{
+	width:0;
+	overflow: hidden;
+}
+.menu a:hover i{
+	width:20px;
+	transition: all 0.5s;
+}
