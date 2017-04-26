@@ -11,7 +11,7 @@ body,ul{
 }
 .menu ul li{
 	display: inline-block;
-	border-left:
+	position: relative;
 }
 .menu{
 	background-color: orange;
@@ -23,22 +23,45 @@ body,ul{
 	font-family: "微软雅黑";
 	color: rgb(0,0,0);
 	display: inline-block;
-	width:200px;
+	width:150px;
 	height:48px;
 	border-left:1px solid rgba(0,0,0,0.4);
 	line-height: 48px;
+	/*
+	text-indent:-60px ;*/
+	
+	
 }
 .menu li:last-child{
 	border-right:1px solid rgba(0,0,0,0.4);
 }
 .menu a:hover{
 	color:rgb(255,255,255);
+	/*
+	text-indent:0px;*/
 }
 .menu a i{
-	width:0;
-	overflow: hidden;
+	transform: scale(0);
+	transition: all 0.6s;
+	margin-right:-10px;
 }
 .menu a:hover i{
-	width:20px;
-	transition: all 0.5s;
+	transform: scale(1);
+	margin-right:10px;
 }
+.menu ul li a::after{
+	content: "";
+	position: absolute;
+	left:10%;
+	right:10%;
+	top:20%;
+	bottom:0;
+	border-radius: 100%;
+	background-color: red;
+	transition: all 0.6;
+	z-index: -1;
+}
+.menu ul li a:hover::after{
+	box-shadow: 0 0 13px 1px rgba(0,0,0,0.5);
+}
+
