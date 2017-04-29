@@ -1,0 +1,30 @@
+body{
+	background-color:gray;
+}
+div{
+	width:450px;
+	height:300px;
+	background-color: rgb(255,255,255);
+	margin:auto;
+	margin-top:150px;
+}
+ul{
+	list-style-type:none ;
+}
+h1{
+	text-align: center;
+	padding-top:30px ;
+}
+.a1{
+	text-decoration: none;
+	font-size:30px;
+	float:left;
+	margin-left: 95px;
+	transition: margin-top 0.1s;
+	margin-top: 60px;
+	transition: all .1s; 
+}
+#buai:hover{
+	padding-top:200px;
+}
+
