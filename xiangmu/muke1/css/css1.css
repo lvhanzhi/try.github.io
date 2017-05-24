@@ -118,3 +118,11 @@ nav .nav_right{
 	width:10px;
 }
 /*nav菜单栏end*/
+/*图片轮播效果star*/
+.ad{
+	width: 1000px;
+	height:310px;
+	overflow: hidden;
+	margin: 0 auto;
+}
+/*图片轮播效果end*/
