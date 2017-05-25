@@ -1,0 +1,15 @@
+top
+
+字体12px	body bgc #f5f5f5	top height 27px
+li width70px 	
+--------------------------------
+logo
+  logo 高80px 	logoleft200px  		logoright宽300px高28颜色8e8e8e
+图片垂直对齐vertical-aglign:middle
+tel字体16px颜色#c00
+------------------------------------
+nav
+ nav高40px	
+-------------------------------------------------
+myfocus
+	http://demo.jb51.net/js/myfocus/download/html
