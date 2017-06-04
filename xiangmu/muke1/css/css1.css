@@ -210,7 +210,52 @@ main .title span a{
 	float: right;
 	color: #a0a4a0;
 	margin-right:5px ;
-
+}
+main .course .news_text{
+	margin-top: 80px;
+	margin-left: 15px;
+	height: 21px;
+	background-image: url("../img/product_type_bg.jpg");
+	background-repeat:no-repeat ;
+}
+main .course .news_text ul li{
+	float: left;
+	margin-left:30px;
+}
+.video img{
+	margin-top: 10px;
+}
+footer{
+	background-color: #E8E8E8;
+	width: 100%;
+	height: 200px;
+	margin-top: 10px;
+}
+footer .footerdl{
+	width: 1000px;
+	margin: auto;
+	text-align: center;
+	font-family: "微软雅黑";
+	color: #999999;
+}
+footer .footerdl dl,footer .footerdl img{
+	float: left;
+}
+footer .footerdl dl{
+	margin: 20px 61px;
+	line-height: 30px;
+}
+footer .footerdl dl dt{
+	font-size: 18px;
+}
+footer .footerdl dl dd{
+	font-size: 15px;
+}
+footer .footerdl img{
+	margin-top: 20px;
+}
+footer .footerdl dl img{
+	margin-top:0 ;
 }
 /*新闻中心end*/
 /*main信息展示区end*/
