@@ -184,6 +184,9 @@ main .title span a{
 	font-family: "微软雅黑";
 	line-height: 23px;
 }
+.pic_news img{
+	float: left;
+}
 .pic_news p{
 	margin-left:5px ;
 	line-height: 23px;
