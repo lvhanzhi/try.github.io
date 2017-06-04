@@ -187,6 +187,7 @@ main .title span a{
 .pic_news p{
 	margin-left:5px ;
 	line-height: 23px;
+	float: left;
 }
 .pic_news p span{
 	color:#C93949;
