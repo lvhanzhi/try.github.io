@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>js全屏滚动效果</title>
+	<link rel="stylesheet" href="1.css" />
+	<!-- 引入fullpage样式文件 -->
+	<link rel="stylesheet" href="jq.css">
+</head>
+<body>
+	<!-- 需要一个元素用来初始化fullpage，这个元素将页面元素包起来 -->
+	<div id="fullpage">
+	<!-- 创建两个页面元素 -->
+	  <div class="section" id="section1">
+	  <!-- 这里添加内容 -->
+	    <h1>这是第一页</h1>
+	  </div>
+	  <div class="section" id="section2">
+	  <!-- 这里添加内容 -->
+	    <h1>这是第二页</h1>
+	  </div>
+	  <div class="section" id="section3">
+	  <!-- 这里添加内容 -->
+	    <h1>这是第三页</h1>
+	  </div>
+	</div>
+	<!-- 引入库文件 -->
+	<script src="//cdn.gbtags.com/jquery/2.1.1/jquery.min.js"></script>
+	<script src="http://img.tx.com.cn/img/html/js/lib/jquery.fullPage.min.js"></script>
+	<!-- 初始化fullpage -->
+	<script>
+	  $(function(){
+	    $("#fullpage").fullpage({
+	    });
+	  });
+	</script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+
+#section1,#section2,#section3{
+  background-image:url(pexels-photo-165887.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.section{
+  text-align: center;
+  color: #fff;
+}
