@@ -16,3 +16,11 @@ h2{
 	top: 25%;
 	left: 15%;
 }
+#section1{
+	background-image: url(img/pexels-photo-139922.jpeg);
+	
+}
+.top{
+	position: fixed;
+	z-index: 9999999;
+}
