@@ -1,0 +1,29 @@
+.clearfix::after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+ul{
+	margin: 0;
+	padding: 0;
+	list-style-type:none ;
+}
+ul li{
+	float: left;
+}
+a{
+	text-decoration: none;
+}
+body{
+	background-image:url(../img/pexels-photo-107906.jpeg) ;
+}
+.content{
+	width: 1200px;
+	margin: auto;
+}
+/*header star*/
+header{
+	background-color: r;
+}
+/*header end*/

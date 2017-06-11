@@ -23,4 +23,34 @@ h2{
 .top{
 	position: fixed;
 	z-index: 9999999;
+	padding-top:10px ;
+	background-color:rgba(0,0,0,0.2);
+	width: 100%;
+}
+.content{
+	width: 1200px;
+	margin: auto;
+}
+.top .left{
+	float: left;
+}
+.top .left img{
+	width: 140px;
+}
+.top .right{
+	float: right;
+}
+.top .right ul{
+	list-style-type: none;
+}
+.top .right ul li{
+	float: left;
+	
+}
+.top .right ul li a{
+	text-decoration: none;
+	color: #fff;
+	padding-left:80px ;
+	position: relative;
+	top: 10px;
 }
