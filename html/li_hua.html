@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>上边框随鼠标滑动效果</title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			ul{
+				padding: 0;
+				margin: 0;
+				list-style-type: none;
+			}
+			a{
+				text-decoration: none;
+				color: #000;
+				line-height: 50px;
+			}
+			ul li{
+				float: left;
+				width: 100px;
+				height: 50px;
+				text-align: center;
+				border-left: 1px solid rgba(0,0,0,0.5);
+				border-bottom: 1px solid rgba(0,0,0,0.5);
+				border-top: 2px solid rgba(255,255,255);
+			}
+			ul li:nth-child(5){
+				border-right: 1px solid rgba(0,0,0,0.5);
+			}
+			ul .fu{
+				top: 0;
+				left: 0;
+				transition: all 0.7s;
+				width: 102px;
+				height: 50px;
+				position: absolute;
+				border: none;
+				border-top: 2px solid deepskyblue;
+			}
+			ul li:nth-child(2):hover~li.fu{
+				left: 101px;
+			}
+			ul li:nth-child(3):hover~li.fu{
+				left: 202px;
+			}
+			ul li:nth-child(4):hover~li.fu{
+				left: 303px;
+			}ul li:nth-child(5):hover~li.fu{
+				left: 404px;
+			}
+		</style>
+	</head>
+	<body>
+		<ul>
+			<li><a href="">首页</a></li>
+			<li><a href="">活动</a></li>
+			<li><a href="">兴趣</a></li>
+			<li><a href="">特长</a></li>
+			<li><a href="">爱好</a></li>
+			<li class="fu"></li>
+		</ul>
+	</body>
+</html>
