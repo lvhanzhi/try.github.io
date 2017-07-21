@@ -4,20 +4,35 @@
 		<meta charset="UTF-8">
 		<title>登录</title>
 		<link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/normalize/7.0.0/normalize.css"/>
+		<link rel="stylesheet" type="text/css" href="https://lvhanzhi.github.io/try.github.io/html/all_css.css"/>
 		<link rel="stylesheet" type="text/css" href="css/login.css"/>
+		<link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css"/>
 	</head>
 	<body>
 		<nav class="logo">
 			<div class="content">
 				<div class="leftarea">
-					<a href=""><img src="img/logo.jpg"/></a>
-					欢迎登录
+					<a href=""><img src="img/logo.jpg"/></a><h1>欢迎登录</h1>
 				</div>
 			</div>
 		</nav>
 		<main>
 			<div class="content">
-				
+				<div class="login">
+					<p>邮箱/用户名/已验证手机</p>
+					<input type="text" id="name" value="" /><i class="fa fa-user-o" aria-hidden="true"></i>
+					<p>密码</p>
+					<input type="password" id="pwd" value="" /><i class="fa fa-unlock-alt" aria-hidden="true"></i>
+					<div class="input_message">
+						<input type="checkbox" name="login_checkbox" id="check1" value="" /><label for="check1">自动登录</label>
+						<input type="checkbox" name="login_checkbox" id="check2" value="" /><label for="check2">安全控件登录</label>
+						<a href="">忘记密码？</a>
+					</div>
+					<input type="button" name="login_btn" id="login_btn" value="登录" />
+					<p>使用合作网站账号登录：</p>
+					<p><a href="">QQ</a>|<a href="">网易</a>|<a href="">人人</a>|<a href="">奇虎360</a>|<a href="">开心</a>|<a href="">豆瓣</a>|<a href="">搜狐</a><a href="">更多</a><i class="fa fa-chevron-down" aria-hidden="true"></i></p>
+				</div>
+				<a href="" class="registered">免费注册<i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
 			</div>
 		</main>
 	</body>
