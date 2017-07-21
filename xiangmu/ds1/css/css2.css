@@ -1,0 +1,76 @@
+.clearfix::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.leftarea{
+	float: left;
+}
+.rightarea{
+	float: right;
+}
+a{
+	text-decoration: none;
+}
+.content{
+	width: 1000px;
+	margin: 0 auto;
+}
+header .top{
+	height: 30px;
+	border-bottom: 1px solid #eee;
+	color: #666;
+	font-size: 12px;
+	line-height: 30px;
+}
+.top a{
+	color: #666;
+	font-size: 12px;
+}
+.top a:hover{
+	color: red;
+}
+.top .leftarea i{
+	color: #f8b600;
+}
+.top .rightarea{
+	margin-right: 20px;
+}
+header .logo{
+	background-color: #1d7ad9;
+	height: 85px;
+}
+.logo .search #search_text{
+	vertical-align:top;
+	width: 360px;
+	height: 35px;
+	border: none;
+	outline: none;
+	margin-top: 23px;
+	margin-left: 200px;
+}
+.logo .search #search_btn{
+	margin-top: 23px;
+	width: 69px;
+	height: 35px;
+	font-family: "微软雅黑";
+	font-size: 14px;
+	color: #fff;
+	background-color: #ff8c00;
+	border: none;
+}
+.logo .search #search_btn:hover{
+	cursor: pointer;
+}
+.logo .shop i{
+	position: absolute;
+}
+.logo .shop{
+	font-size:14px;
+	font-family: "微软雅黑";
+	color: #fff;
+	background-color: #ff8c00;
+}
+.logo .shop #ship_car{
+	padding: 10px 5px 10px 40px;
+}

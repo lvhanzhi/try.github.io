@@ -162,6 +162,7 @@ main .menuBar .menu{
 .menuBar .menu dl a{
 	color: #fff;
 	padding:3px 3px;
+	border: 1px solid rgba(0,0,0,0);
 }
 .menuBar .menu dl a:hover{
 	background-color: #106ac0;
@@ -187,9 +188,89 @@ main .menuBar .menu{
 	font-family: "宋体";
 	text-indent: 10px;
 }
-
+.menuBar .menu dl .menu_s1{
+	position: absolute;
+	top: 0;
+	left: 189px;
+	width: 570px;
+	height: 380px;
+	background-color: #fff;
+	border: 1px solid #dddddd;
+	z-index: 2;
+	opacity: 0;
+}
+.menuBar .menu .dl1:hover .menu_s1{
+	opacity: 1;
+}
+.menuBar .menu dl .menu_s1 dl{
+	border: none;
+	margin-left:20px ;
+	margin-right:20px ;
+	border-bottom:1px solid #ddd ;
+	margin-bottom: -10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.menuBar .menu dl .menu_s1 dl:first-child{
+	height: 50px;
+}
+.menuBar .menu dl .menu_s1 dl dt{
+	color: #4b88da;
+	margin-left:0px ;
+	float: left;	
+}
+.menuBar .menu dl .menu_s1 dl dd{
+	font-family: "宋体";
+	font-size: 12px;
+	float: left;
+	padding-top: 13px;
+	margin-left: -10px;
+}
+.menuBar .menu dl .menu_s1 .btn1,.menuBar .menu dl .menu_s1 .btn2{
+	padding: 10px 20px;
+	padding-right: 30px;
+	background-color: #2785e6;
+	color: #fff;
+	font-family: "宋体";
+	font-size: 12px;
+	margin-left: 10px;
+	position: relative;
+	top: 25px;
+}
+.menuBar .menu dl .menu_s1 .btn1{
+	margin-left: 20px;
+}
+.menuBar .menu dl .menu_s1 i{
+	position: absolute;
+	margin-left: -20px;
+	top: 340px;
+	color: #fff;
+}
 /*menuBar 结束*/
 /*seaction1 开始*/
-main .computer
+.title{
+	margin-top: 15px;
+	height: 60px;
+}
+.title img{
+	float: left;
+}
+.title h2{
+	float: left;
+	margin-left: 14px;
+	display: inline-block;
+	font-family: "微软雅黑";
+	font-size: 24px;
+	margin-top: 7px;
+}
+.title .rightarea a{
+	font-size: 12px;
+	font-family: "新宋体";
+	color: #000;
+	margin-bottom: 10px;
+}
+.title .rightarea{
+	margin-top: 30px;
+}
 /*seaction1 结束*/
 /*main 结束*/
