@@ -283,7 +283,7 @@ main section .like .rightarea{
 	width: 811px;
 	height: 400px;
 }
-main .home_computer .computer .iphone{
+main .computer .iphone{
 	float:left;
 	width: 202.5px;
 	height: 280px;
@@ -292,58 +292,73 @@ main .home_computer .computer .iphone{
 	border-bottom: 1px solid #e5e5e5;
 	text-align: center;
 }
-main .home_computer .computer .iphone figcaption a{
+main .computer .iphone figcaption a{
 	font-size: 16px;
 	font-family: "微软雅黑";
 	color: #000;
 }
-main .home_computer .computer .iphone figcaption a:hover{
+main .computer .iphone figcaption a:hover{
 	text-decoration: underline;
 	color:#ff7201;
 }
-main .home_computer .computer .iphone figcaption p{
+main .computer .iphone figcaption p{
 	font-size: 14px;
 	font-family: "微软雅黑";
 	color: #ff7300;
 }
-main .home_computer .computer .iphone img{
+main .computer .iphone img{
 	width: 139px;
 	height: 152px;
 	margin-top: 45px ;
 	margin-bottom: 25px;
 
 }
-main .home_computer .computer .other{
+main .computer .other{
 	float: left;
 	width: 202.5px;
 	height: 120px;
 	border-right: 1px solid #e5e5e5;
 	border-bottom: 2px solid #ff7201;
 }
-main .home_computer .computer .other figcaption{
+main .computer .other figcaption{
 	width: 92px;
 	height: 49px;
 	float: right;
 	margin-top: 27px;
 	margin-right: 5px;
 }
-main .home_computer .computer .other a{
+main .computer .other a{
 	font-size: 12px;
 	font-family: "新宋体";
 	color: #ff7300;
 }
-main .home_computer .computer .other a:hover{
+main .computer .other a:hover{
 	text-decoration: underline;
 	color: #181818;
 }
-main .home_computer .computer .other figcaption p{
+main .computer .other figcaption p{
 	font-family: "微软雅黑";
 	font-size: 16px;
 	color: #181818;
 }
-main .home_computer .computer .other img{
+main  .computer .other img{
 	width: 80px;
 	height: 62px;
 	margin-top: 27px;
 	margin-left: 15px;
+}
+main{
+	margin-bottom: 40px;
+}
+footer{
+	background-color: #d4d4d4;
+	height: 130px;
+	text-align: center;
+}
+footer p{
+	font-family: "新宋体";
+	font-size: 12px;
+}
+footer p:first-child{
+	padding-top: 50px;
 }
