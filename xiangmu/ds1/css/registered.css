@@ -1,0 +1,72 @@
+.content{
+	width: 633px;
+}
+nav{
+	height: 85px;
+	background-color: #1d7ad9;
+}
+nav img{
+	margin-left: 50px;
+}
+nav h1{
+	display: inline-block;
+	vertical-align: top;
+	font-family: "微软雅黑";
+	font-size: 22px;
+	color: #fff;
+	line-height: 65px;
+	margin-left: 20px;
+}
+main .content{
+	margin-top: 15px;
+	height: 580px;
+	border: 1px solid #ccc;
+}
+main .input{
+	width: 380px;
+	height: 312px;
+	margin-top: 70px;
+	margin-left: 100px;
+	position: relative;
+}
+main .input input{
+	width: 270px;
+	height: 36px;
+	margin-bottom: 20px;
+	margin-top: 0px;
+}
+main .input .star{
+	color: red;
+}
+main .input p{
+	width: 106px;
+	display: inline-block;
+	text-align: right;
+}
+main .input i{
+	font-size:22px ;
+	position: absolute;
+	right: 15px;
+	margin-top: 15px;
+	color: #eee;
+}
+main input[type="checkbox"]{
+	margin-top: 45px;
+	margin-left: 200px;
+}
+main label{
+	font-size: 12px;
+}
+main a{
+	color: #005aa0;
+	font-size: 12px;
+}
+main a:hover{
+	color: red;
+}
+main input[type="submit"]{
+	width: 270px;
+	height: 36px;
+	margin-left: 200px;
+	margin-top: 30px;
+}

@@ -1,27 +1,47 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="UTF-8">
-		<title></title>
-		
-	</head>
-	<body>
-<script type="text/javascript">
- function Href(t) {
-    t.getElementsByTagName('div')[0].style.display = ''
- }
+<head>
+<title></title>
+</head>
+<style>
+   #box1 {
+   	width:200px;
+   	height:200px; 
+   	background-color: red; 
+   	margin-right: 20px; 
+   }
+   #box2 {
+   	width:200px; 
+   	height:200px;  
+   	display:none;
+   	background-color: blue;
+   
+   }
+   .box{
+   	float: left;
+   	font-size: 20px;
+   	text-align: center;
+   	color: #fff;
+   }
+</style>
+</head>
+<div id="box1" class="box">box1</div>
+<div id="box2" class="box">box2</div>
+<script>
+    window.onload = function(){
+        var box1 = document.getElementById("h1");
+        var box2 = document.getElementById("menu2");
+        box1.onmouseover = function(){
+            box2.style.display = "block";
+        };
+        box2.onmouseover = function(){
+            box2.style.display = "block";
+        };
+       	box2.onmouseout = function(){
+            box2.style.display = "none";
+        };
+    };
 </script>
- 
-<div onMouseOver=Href(this)><a href="#">显示隐藏1</a>
-  <div style="display:none ">
-  内容1..
-  </div>
-</div>
- 
-<div onMouseOver=Href(this)><a href="#">显示隐藏2</a>
-  <div style="display:none ">
-  内容2..
-  </div>
-</div>
-	</body>
+
+</body>
 </html>
