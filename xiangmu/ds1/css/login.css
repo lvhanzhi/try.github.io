@@ -70,6 +70,9 @@ main .login input[type="button"]{
 	color: #606060;
 	margin-bottom: 20px;
 }
+main .login input[type="button"]:active{
+	border-color: red;
+}
 .registered{
 	position: absolute;
 	top: 356px;

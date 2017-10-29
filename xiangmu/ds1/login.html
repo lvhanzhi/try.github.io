@@ -7,6 +7,7 @@
 		<link rel="stylesheet" type="text/css" href="https://lvhanzhi.github.io/try.github.io/html/all_css.css"/>
 		<link rel="stylesheet" type="text/css" href="css/login.css"/>
 		<link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css"/>
+		<script src="https://lvhanzhi.github.io/jq/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
 	</head>
 	<body>
 		<nav class="logo">
@@ -28,12 +29,51 @@
 						<input type="checkbox" name="login_checkbox" id="check2" value="" /><label for="check2">安全控件登录</label>
 						<a href="">忘记密码？</a>
 					</div>
-					<input type="button" name="login_btn" id="login_btn" value="登录" />
+					<input type="button" name="login_btn" id="login_btn" value="登录" onclick="login(event)"/>
 					<p>使用合作网站账号登录：</p>
 					<p><a href="">QQ</a>|<a href="">网易</a>|<a href="">人人</a>|<a href="">奇虎360</a>|<a href="">开心</a>|<a href="">豆瓣</a>|<a href="">搜狐</a><a href="">更多</a><i class="fa fa-chevron-down" aria-hidden="true"></i></p>
 				</div>
 				<a href="registered.html" class="registered">免费注册<i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
 			</div>
 		</main>
+		<script type="text/javascript">
+			var name=document.getElementById("name");
+			var pwd=document.getElementById("pwd");
+			pwd.addEventListener("click",clickpwd,true);
+			function clickpwd () {
+				if($("#name").val()=="" ){
+					alert("请先填用户名");
+				}
+			}
+			window.addEventListener("keydown",function(event){
+				var event=event||window.event;
+				var target=event.target||event.srcElement;
+				var keycode=event.keyCode||event.which||event.charCode;
+				console.log(keycode);
+				if(keycode==13){
+					if($("#name").val()=="" ){
+						alert("请先填用户名");
+					}
+					else if($("#pwd").val()=="" ){
+						alert("请填入密码");
+					}
+					if($("#name").val()!=""&&$("#pwd").val()!=""){
+					window.open('http://www.imooc.com','_blank')
+					}
+				}
+			})
+			function login(event){
+				var event=event||window.event;
+					if($("#name").val()=="" ){
+						alert("请先填用户名");
+					}
+					else if($("#pwd").val()=="" ){
+						alert("请填入密码");
+					}
+					if($("#name").val()!=""&&$("#pwd").val()!=""){
+					window.open('http://www.imooc.com','_blank')
+					}
+			}
+		</script>
 	</body>
 </html>
