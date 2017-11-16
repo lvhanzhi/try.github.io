@@ -1,0 +1,232 @@
+{
+  "index.html": {
+    "resources": [
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "js/update.js",
+      "img2/IMG_0005.JPG",
+      "video/MUI - accordion\býýb\t\u0001button.mp4",
+      "video/MUI - accordion\býýb\t\u0001button.mp4",
+      "video/1.mp4"
+    ],
+    "refer": [
+      "index-menu.html",
+      "study.html"
+    ]
+  },
+  "index-menu.html": {
+    "refer": [
+      "examples/tab-with-viewpagerindicator.html"
+    ],
+    "resources": []
+  },
+  "home.html": {
+    "resources": [
+      "js/mui.min.js",
+      "img2/bg.jpg",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "shouye.html",
+      "logincheck.php"
+    ],
+    "refer": [
+      "logincheck.php",
+      "shouye.html"
+    ]
+  },
+  "shouye.html": {
+    "resources": [
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "img2/001.jpg",
+      "img2/z22.jpg",
+      "img2/z44.jpg",
+      "img2/z33.jpg",
+      "img2/z11.jpg",
+      "img2/sp2.jpg",
+      "saoyisao.html",
+      "home.html",
+      "xiaoxi.html",
+      "sao.html",
+      "video/MUI ýý\u0001ýyý\u001bý\u0001 ý@\u0003@2.mp4",
+      "video/MUI ýý\u0001ýyý\u001bý\u0001 ý@\u0003@.mp4",
+      "video/MUI - actionsheet\býh\t\u0001badge.mp4",
+      "video/MUI - accordion\býýb\t\u0001button.mp4",
+      "video/MUI ýý\u0001ýyý\u001bý\u0001 ý@\u0003@2.mp4",
+      "video/MUI ýý\u0001ýyý\u001bý\u0001 ý@\u0003@.mp4",
+      "video/MUI - actionsheet\býh\t\u0001badge.mp4",
+      "video/MUI - accordion\býýb\t\u0001button.mp4",
+      "study.html",
+      "video/MUI ýý\u0001ýyý\u001bý\u0001 ý@\u0003@2.mp4",
+      "video/MUI ýý\u0001ýyý\u001bý\u0001 ý@\u0003@.mp4",
+      "video/MUI - actionsheet\býh\t\u0001badge.mp4",
+      "video/MUI - accordion\býýb\t\u0001button.mp4",
+      "img2/u\u003d983683831,898148835\u0026fm\u003d27\u0026gp\u003d0.jpg",
+      "img2/u\u003d1110210274,3837211328\u0026fm\u003d15\u0026gp\u003d0.jpg",
+      "img2/u\u003d3453402029,199654678\u0026fm\u003d11\u0026gp\u003d0.jpg"
+    ],
+    "refer": [
+      "zixun1.html",
+      "my.html",
+      "my.php",
+      "study.html",
+      "saoyisao.html"
+    ]
+  },
+  "test.html": {
+    "resources": [
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css"
+    ],
+    "refer": []
+  },
+  "saoyisao.html": {
+    "resources": [
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "shouye.html",
+      "js/common.js",
+      "css/common.css"
+    ],
+    "refer": []
+  },
+  "xiaoxi.html": {
+    "resources": [
+      "img2/001.jpg",
+      "img2/IMG_0005.JPG",
+      "img2/timg.jpg",
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "xiaoxi2.html",
+      "shouye.html"
+    ],
+    "refer": []
+  },
+  "xiaoxi2.html": {
+    "resources": [
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "xiaoxi.html",
+      "my.html"
+    ],
+    "refer": []
+  },
+  "study.html": {
+    "resources": [
+      "image/mianlb1.jpg",
+      "image/LB2.jpg",
+      "video/MUI ýý\u0001ýyý\u001bý\u0001 ý@\u0003@3.mp4",
+      "video/MUI ýý\u0001ýyý\u001bý\u0001 ý@\u0003@3.mp4",
+      "images/u\u003d1475424369,2315353264\u0026fm\u003d11\u0026gp\u003d0.jpg",
+      "images/u\u003d2009022280,1675209289\u0026fm\u003d27\u0026gp\u003d0.jpg",
+      "images/u\u003d1833379920,1902252195\u0026fm\u003d27\u0026gp\u003d0.jpg",
+      "images/sp1.jpg",
+      "video/MUI ýý\u0001ýyý\u001bý\u0001 ý@\u0003@3.mp4",
+      "images/u\u003d2157494086,2742477314\u0026fm\u003d27\u0026gp\u003d0.jpg",
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "video/MUI - accordion\býýb\t\u0001button.mp4",
+      "video/MUI - accordion\býýb\t\u0001button.mp4",
+      "image/u\u003d1608279887,292172261\u0026fm\u003d27\u0026gp\u003d0.jpg",
+      "image/fffff.jpg",
+      "image/u\u003d1166294761,3360289966\u0026fm\u003d27\u0026gp\u003d0.jpg",
+      "image/55c55f77ca4ae.jpg",
+      "image/55a48a528109d.jpg",
+      "image/u\u003d4216457483,1224516488\u0026fm\u003d27\u0026gp\u003d0.jpg",
+      "image/u\u003d4208919252,1598039256\u0026fm\u003d27\u0026gp\u003d0.jpg",
+      "images/z33.jpg",
+      "image/u\u003d2241449688,3043424962\u0026fm\u003d27\u0026gp\u003d0.jpg",
+      "image/ass.jpg",
+      "images/gg1.jpg",
+      "image/24442-20171114102259156-1700577248.png",
+      "images/20171112165941_7115.jpg",
+      "image/55a4a99f64419.jpg",
+      "images/muwu.jpg",
+      "images/shuijiao.jpg",
+      "images/u\u003d2518663182,3747973217\u0026fm\u003d27\u0026gp\u003d0.jpg",
+      "images/yuantiao.jpg"
+    ],
+    "refer": [
+      "shouye.html",
+      "zixun1.html",
+      "my.html",
+      "my.php",
+      "index.html"
+    ]
+  },
+  "zixun1.html": {
+    "resources": [
+      "image/LB1.jpg",
+      "image/11.jpg",
+      "images/20171112_190524_245.jpg",
+      "js/mui.min.js",
+      "css/mui.min.css",
+      "fonts/mui.ttf",
+      "image/55c55f77ca4ae.jpg",
+      "xizun2.html",
+      "image/55a4a99f64419.jpg"
+    ],
+    "refer": [
+      "my.html",
+      "shouye.html",
+      "study.html",
+      "xizun2.html",
+      "my.php"
+    ]
+  },
+  "oneclass.html": {
+    "resources": [
+      "img2/sp2.jpg",
+      "js/mui.min.js",
+      "css/mui.min.css"
+    ],
+    "refer": []
+  },
+  "my.html": {
+    "resources": [
+      "image/LB1.jpg",
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css"
+    ],
+    "refer": [
+      "study.html",
+      "zixun1.html",
+      "shouye.html"
+    ]
+  },
+  "my.php": {
+    "resources": [
+      "image/LB1.jpg",
+      "js/mui.min.js",
+      "css/mui.min.css",
+      "fonts/mui.ttf"
+    ],
+    "refer": [
+      "zixun1.html",
+      "study.html",
+      "shouye.html"
+    ]
+  },
+  "xizun2.html": {
+    "resources": [
+      "images/20171112_190529_411.jpg",
+      "js/mui.min.js",
+      "css/mui.min.css",
+      "fonts/mui.ttf",
+      "image/11.jpg",
+      "images/20171112_190524_245.jpg",
+      "zixun1.html"
+    ],
+    "refer": [
+      "zixun1.html"
+    ]
+  }
+}

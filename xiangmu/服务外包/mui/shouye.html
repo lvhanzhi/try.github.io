@@ -1,0 +1,590 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<style type="text/css">
+	  	.mui-bar-tab .mui-tab-item.mui-active{
+         color: grey /* 这里放你想要的颜色 */
+}
+.mui-bar .mui-icon:active{
+color: grey
+}
+			.left_area{
+				float: left;
+			}
+			.right_area{
+				float: right;
+			}
+			.clearfix::after{
+				content:"";
+				clear: both;
+				display: block;
+			}
+			header{
+				position: relative;
+				z-index: 2;
+				width: 100%;
+				height: 10%;
+				margin: auto;
+				color: #fff;
+			}
+			header .icon1{
+				width: 13%;
+				float: left;
+				margin-top: 5px;
+			}
+			header .mui-icon{
+				padding-left:10px ;
+			}
+			header .icon2{
+				margin-top: 3.5px;
+			}
+			header .icon2 .mui-icon{
+				padding-left:5px ;
+			}
+			header .seach{
+				float: left;
+				text-align: left;
+				margin-top: 5px;
+				width: 76%;
+			}
+			header .seach input{
+				background-color: rgba(255,255,255,0.2);
+				border-radius: 20px;
+			}
+			header .seach input:focus{
+				padding-left: 40px;
+				opacity: 0.4;
+				
+			}
+			header .seach .mui-icon-search{
+				position: absolute;
+				top: 10px;
+				opacity: 0.4;
+			}
+			header .icon2{
+				width: 11%;
+				float: right;
+			}
+			header p{
+				font-size: 10px;
+				text-align: center;
+			}
+			.mui-content .cotent1{
+				width: 100%;
+				height: 200px;
+				overflow: hidden;
+				position: absolute;
+			}
+			.mui-content .cotent1 img{
+				height: 200px;
+			}
+			.mui-content .cotent1 .mui-indicator{
+				float: right;
+			}
+			.mui-content .cotent2{
+				padding-top:215px ;
+			}
+			.mui-content .cotent2 .quan{
+				float: left;
+				width: 25%;
+				text-align: center;
+			}
+			.mui-content .cotent2 .quan .quan_zi{
+				width: 35px;
+				margin: auto;
+				padding: 6px 0px 5px 0px;
+				border-radius:100% ;
+				border: 2px solid dodgerblue;
+				color: dodgerblue;
+				font-weight: bold;
+				margin-bottom: 5px;
+			}
+			.mui-content .cotent2 .quan:nth-child(2) .quan_zi{
+				color: green;
+				border: 2px solid green;
+			}
+			.mui-content .cotent2 .quan:nth-child(3) .quan_zi{
+				color: orange;
+				border: 2px solid orange;
+			}
+			.mui-content .cotent3 .zhaoping{
+				height: 45px;
+				width: 100%;
+				border-top: 2px solid rgba(0,0,0,0.05);
+				border-bottom: 2px solid rgba(0,0,0,0.05);
+			}
+			.mui-content .cotent3 .zhaoping .right_area{
+				width: 78%;
+				overflow: hidden;
+				font-size: 10px;
+				color: rgba(0,0,0,0.7);
+				line-height: 40px;
+				margin-top: 5px;
+				margin-bottom: 5px;
+			}
+			 #marquee p{height:30px;line-height: 30px;margin:0;font-size: 10px;}
+			.mui-content .cotent3 .zhaoping h4{
+				color: red;
+				line-height: 30px;
+				padding-left: 5%;
+			}
+			.mui-content .content4 h3,.mui-content .content5 h3{
+				font-size: 16px;
+				color: rgba(0,0,0,1);
+				margin-left: 10px;
+				font-weight: 540;
+				padding-bottom:8px ;
+				/*border-bottom:1px solid rgba(0,0,0,0.1);*/
+				margin-right: 10px;
+				padding-top:5px ;
+			}
+			.mui-content .content4 .tuijian{
+				margin-right: 10px;
+				margin-left: 10px;
+				border-bottom:1px solid rgba(0,0,0,0.1);
+				padding: 5px;
+				padding-bottom: 10px;
+			}
+			.mui-content .content4 a:last-child .tuijian{
+				border: none;
+			}
+			.mui-content .content4 .tuijian .left_area{
+				width:45%;
+				overflow: hidden;
+				height: 70px;
+				border-radius: 3px;
+			}
+			.mui-content .content4 .tuijian .left_area img{
+				width: 100%;
+			}
+			.mui-content .content4 a .tuijian .right_area{
+				margin-right: 10px;
+				margin-top: 7px;
+				position: relative;
+			}
+			.mui-content .content4 a .tuijian .right_area h5{
+				color: black;
+				line-height: 8px;
+				letter-spacing: 2px;
+			}
+			.mui-content .content4 a .tuijian .right_area p{
+				color: rgba(0,0,0,0.8);
+				font-size: 13px;
+				padding-left: 7px;
+				letter-spacing: 1px;
+			}
+			.mui-content .content4 a .tuijian .right_area span{
+				font-size: 10px;
+				position: absolute;
+				bottom:-11px;
+			}
+			/*footer a .book{
+				margin-bottom: -4px;
+			}
+			footer a .book_text{
+				margin-top: 0px;
+			}
+			footer a .coffe{
+				margin-bottom: -2px;
+			}
+			footer a .coffe_text{
+				margin-bottom: -3px;
+			}
+			#book2,#coffe2{
+				margin-left: 22px;
+				margin-bottom: 1px;
+				display: none;
+			}
+			#coffe2{
+				margin-bottom: 2px;
+			}*/
+			.mui-content .content5{
+				border-top: 7px solid rgba(0,0,0,0.08);
+			}
+			.first_area h4,.first_area p{
+				color: #fff;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header>
+			<div class="icon1">
+				<a href="saoyisao.html" style="color: white;">
+					<span id="saoyisao" class="mui-icon mui-icon-camera"></span><br />
+				<p>扫一扫</p>
+				</a>
+			</div>
+			<div class="seach">
+				<span class="mui-icon mui-icon-search" style="margin-left: 5px;"></span>
+				<input type="search" name="" required="" placeholder="行庆理财明星产品" lang="zh-CN">
+			</div>
+			<div class="icon2">
+				<a href="xiaoxi.html" style="color: white;"><span class="mui-icon mui-icon-email" style="margin-left: 4px;"></span><br />
+				<p>消息</p></a>
+			</div>
+		</header>
+		<div class="mui-content">
+			<!--图片轮播  star-->
+		    <div class="cotent1">
+		    	<div id="slider" class="mui-slider" >
+		    	  <div class="mui-slider-group mui-slider-loop">
+		    	    <!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+		    	    <div class="mui-slider-item mui-slider-item-duplicate">
+		    	      <a href="#">
+		    	        <img src="img2/z11.jpg"/>
+		    	      </a>
+		    	    </div>
+		    	    <!-- 第一张 -->
+		    	    <div class="mui-slider-item">
+		    	      <a href="#">
+		    	        <img src="img2/z11.jpg">
+		    	      </a>
+		    	    </div>
+		    	    <!-- 第二张 -->
+		    	    <div class="mui-slider-item">
+		    	      <a href="#">
+		    	        <img src="img2/z22.jpg">
+		    	      </a>
+		    	    </div>
+		    	    <!-- 第三张 -->
+		    	    <div class="mui-slider-item">
+		    	      <a href="#">
+		    	        <img src="img2/z33.jpg">
+		    	      </a>
+		    	    </div>
+		    	    <!-- 第四张 -->
+		    	    <div class="mui-slider-item">
+		    	      <a href="#">
+		    	        <img src="img2/z44.jpg">
+		    	      </a>
+		    	    </div>
+		    	    <!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+		    	    <div class="mui-slider-item mui-slider-item-duplicate">
+		    	      <a href="#">
+		    	        <img src="img2/z11.jpg">
+		    	      </a>
+		    	    </div>
+		    	  </div>
+		    	  <div class="mui-slider-indicator">
+		    	    <div class="mui-indicator mui-active"></div>
+		    	    <div class="mui-indicator"></div>
+		    	    <div class="mui-indicator"></div>
+		    	    <div class="mui-indicator"></div>
+		    	  </div>
+		    	</div>
+		    </div>
+		    <!--图片轮播  end-->
+		   <a href="study.html"><div class="cotent2" style="background-color: white;">
+		    	<div class="quan" style="background-color: white;">
+					<div class="quan_zi">
+						课
+					</div>
+					<p>微课堂</p>
+		    	</div></a> 
+		    	<div class="quan" style="background-color: white;">
+					<div class="quan_zi">
+						商
+					</div>
+					<p>微商城</p>
+		    	</div>
+		    	<div class="quan" style="background-color: white;">
+					<div class="quan_zi">
+						论
+					</div>
+					<p>云论坛</p>
+		    	</div>
+		    	<div class="quan" style="background-color: white;">
+					<div class="quan_zi">
+						服
+					</div>
+					<p>云服务</p>
+		    	</div>
+		    </div>
+		    <div class="cotent3 clearfix" style="background-color: white;">
+		    	<div class="zhaoping left_area clearfix">
+		    		<h4 class="left_area">招聘</h4>
+		    		<div class="right_area">
+		    			<div style="height:30px;overflow:hidden;">
+            <div id='marquee' style="background-color: white;">
+                <p >北京市宣武门外大街富卓大厦:中级Java开发工程师</p>
+                <p>北京市宣武门外大街富卓大厦:中级Java开发工程师</p>
+                <p>北京市宣武门外大街富卓大厦:中级Java开发工程师</p>
+                <p>北京市宣武门外大街富卓大厦:中级Java开发工程师</p>
+                <p>北京市宣武门外大街富卓大厦:中级Java开发工程师</p>
+            </div>
+        </div>
+		    		</div>
+
+		    	</div>
+		    </div>
+		    <div class="content4" style="background-color: white;">
+		    	<h3>为您推荐</h3>
+		    	
+		    		<div class="tuijian clearfix">
+		    		<div class="left_area">
+						<img src="img2/u=3453402029,199654678&fm=11&gp=0.jpg"/>
+<!--						
+							<video class="" webkit-playsinline style="object-fit: fill;">
+								<source src="video/MUI - accordion（折叠面板）、button.mp4" type="video/mp4"></source>
+								<p>sdas</p>
+							</video>-->
+					
+		    		</div>
+		    		<div class="right_area">
+		    			<h5 style="color: black;margin-right: 27px;">创意视觉海报设计</h5>
+		    			<p  style="color: black;">[ 涵品教育 ] - 浆糊</p>
+						<span style="color: rgb(0,122,255);font-size: 10px;">直播中</span>
+		    		</div>
+		    	</div>
+		    	
+		    	<a id="toOneClass" onclick="toOneClass">
+		    		<div class="tuijian clearfix">
+		    		<div class="left_area">
+						<img src="img2/sp2.jpg"/>
+						<!--<video class="" webkit-playsinline style="object-fit: fill;">
+								<source src="video/MUI - actionsheet（操作表）、badge.mp4" type="video/mp4"></source>
+								<p>sdas</p>
+							</video>-->
+		    		</div>
+		    		<div class="right_area">
+		    			<h5 style="color: black;margin-right:0px;">创意视觉海报设计</h5>
+		    			<p style="color: black;">[ 涵品教育 ] - 浆糊</p>
+						<span style="color:rgb(0,122,255); font-size: 10px;">直播中</span>
+		    		</div>
+		    	</div>
+		    	</a>
+		    	<a href="#">
+		    		<div class="tuijian clearfix">
+		    		<div class="left_area">
+						<img src="img2/u=1110210274,3837211328&fm=15&gp=0.jpg"/>
+						<!--<video class="" webkit-playsinline style="object-fit: fill;">
+								<source src="video/MUI 介绍、新项目创建、 基础布局.mp4" type="video/mp4"></source>
+								<p>sdas</p>
+							</video>-->
+		    		</div>
+		    		<div class="right_area">
+		    			<h5>创意视觉海报设计</h5>
+		    			<p>[ 涵品教育 ] - 浆糊</p>
+						<span>直播中</span>
+		    		</div>
+		    	</div>
+		    	</a>
+		    	<a href="#">
+		    		<div class="tuijian clearfix">
+		    		<div class="left_area">
+						<img src="img2/u=983683831,898148835&fm=27&gp=0.jpg"/>
+						<!--<video class="" webkit-playsinline style="object-fit: fill;">
+								<source src="video/MUI 介绍、新项目创建、 基础布局2.mp4" type="video/mp4"></source>
+								<p>sdas</p>
+							</video>-->
+		    		</div>
+		    		<div class="right_area">
+		    			<h5>创意视觉海报设计</h5>
+		    			<p>[ 涵品教育 ] - 浆糊</p>
+						<span>直播中</span>
+		    		</div>
+		    	</div>
+		    	</a>
+		    </div>
+		    <div class="content5" style="background-color: white;">
+				<h3>新人专区</h3>
+				 <div class="mui-slider">
+		        <div class="mui-slider-group mui-slider-loop">
+		        	<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一个图文表格) -->
+		            <div class="mui-slider-item mui-slider-item-duplicate">
+		                <ul class="mui-table-view mui-grid-view">
+		                    <li class="mui-table-view-cell mui-media mui-col-xs-6"><a href="#"><div class="first_area" style="background-color: #AB483C;">
+		                    		<h4>新手有礼</h4>
+		                    		<p>80元现金礼券免费领</p>
+		                    	</div></a></li>
+		                    <li class="mui-table-view-cell mui-media mui-col-xs-6" style="background-color: #141315;"><a href="#"><div class="first_area">
+		                    		<h4>使用攻略</h4>
+		                    		<p>教你玩转D</p>
+		                    	</div></a></li>
+		                </ul>
+		            </div>
+		            <div class="mui-slider-item">
+		                <ul class="mui-table-view mui-grid-view">
+		                    <li class="mui-table-view-cell mui-media mui-col-xs-6"><a href="#">
+		                    	<div class="first_area"style="background-color: #AB483C;padding: 10px;">
+		                    		<h4>新手有礼</h4>
+		                    		<p>80元现金礼券免费领</p>
+		                    	</div>
+		                    </a></li>
+		                    <li class="mui-table-view-cell mui-media mui-col-xs-6"><a href="#">
+		                    	<div class="first_area"style="background-color: #141315;padding: 10px;">
+		                    		<h4>使用攻略</h4>
+		                    		<p>教你玩转D</p>
+		                    	</div>
+		                    </a></li>
+		                </ul>
+		            </div>
+		            <div class="mui-slider-item">
+		                <ul class="mui-table-view mui-grid-view">
+		                    <li class="mui-table-view-cell mui-media mui-col-xs-6"><a href="#">
+		                    	<div class="first_area"style="background-color: #7E1D22;padding: 10px;">
+		                    		<h4>专享活动</h4>
+		                    		<p>商城用券9.9</p>
+		                    	</div>
+		                    </a></li>
+		                    <li class="mui-table-view-cell mui-media mui-col-xs-6"><a href="#">
+		                    	<div class="first_area"style="background-color: #888888;padding: 10px;">
+		                    		<h4>闪电开户</h4>
+		                    		<p>快速开通一网通账户</p>
+		                    	</div>
+		                    </a></li>
+		                </ul>
+		            </div>
+		            <!-- 额外增加的一个节点(循环轮播：最后一个节点是第一个图文表格) -->
+		            <div class="mui-slider-item mui-slider-item-duplicate">
+		                <ul class="mui-table-view mui-grid-view">
+		                    <li class="mui-table-view-cell mui-media mui-col-xs-6"><a href="#"><div class="first_area"style="background-color: #7E1D22;padding: 10px;">
+		                    		<h4>专享活动</h4>
+		                    		<p>商城用券9.9</p>
+		                    	</div></a></li>
+		                    <li class="mui-table-view-cell mui-media mui-col-xs-6"><a href="#"><div class="first_area"style="background-color: #888888;padding: 10px;">
+		                    		<h4>闪电开户</h4>
+		                    		<p>快速开通一网通账户</p>
+		                    	</div></a></li>
+		                </ul>
+		            </div>
+		        </div>
+		        <div class="mui-slider-indicator" style="position: static;background-color: #fff; opacity: 0;">
+		            <span class="mui-action mui-action-previous mui-icon mui-icon-back"></span>
+		            <div class="mui-number">
+		                <span>1</span> / 2
+		            </div>
+		            <span class="mui-action mui-action-next mui-icon mui-icon-forward"></span>
+		        </div>
+		    </div>
+			</div>
+		</div>
+		<footer>
+			<nav class="mui-bar mui-bar-tab" >
+			    <a class="mui-tab-item mui-active" id="toshouye" style="color: cornflowerblue;">
+			        <span class="mui-icon mui-icon-home"></span>
+			        <span class="mui-tab-label">首页</span>
+			    </a>
+			    <a class="mui-tab-item" id="toxuexi" >
+			        <span class="mui-icon mui-icon-compose"></span>
+			        <span class="mui-tab-label">学习</span>
+			    </a>
+			    <a class="mui-tab-item" id="tozixun" >
+			        <span class="mui-icon mui-icon-spinner-cycle mui-spin"></span>
+			        <span class="mui-tab-label">咨询</span>
+			    </a>
+			    <a class="mui-tab-item" id="toMy" >
+			        <span class="mui-icon mui-icon-person"></span>
+			        <span class="mui-tab-label">我的</span>
+			    </a>
+			</nav>
+		</footer>
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript">
+//			function toshouye(e){
+//				window.location.href = "shouye.html";
+//            
+//			}
+//			function toxuexi(e){
+//				window.location.href = "study.html"
+//             
+//			}
+//			function toziyuan(e){
+//				window.location.href = "zixun1.html"
+//			}
+//			function toMy(e){
+//				window.location.href = "my.html";
+//			}
+       //		
+           
+       
+            
+		
+			//文字轮播 star
+			  (function(){
+                var marquee = document.getElementById('marquee');
+                var offset=0;
+                var scrollheight =marquee.offsetHeight;
+                var firstNode = marquee.children[0].cloneNode(true);
+                var osaoyisao = document.getElementById('saoyisao');
+                marquee.appendChild(firstNode);//还有这里
+                setInterval(function(){
+                    if(offset == scrollheight){
+                        offset = 0;
+                    }
+                    marquee.style.marginTop = "-"+offset+"px";
+                    offset += 1;
+                },50);
+            })();
+			//文字轮播 end
+			mui.init()
+			var gallery=mui('.mui-slider');
+			gallery.slider({
+				interval:1000
+			});
+			function home () {
+				window.location.href="shouye.html";
+			}
+			function study () {
+				window.location.href="study.html";
+			}
+			
+			
+			(function($){
+    var bvd = function(dom) {
+        this.dom = document.querySelector(dom || 'video');
+    }
+    
+    var pro = bvd.prototype;
+    
+    pro.test = function(){
+        console.log(this.dom)
+    }
+    
+    
+    var nv = null;
+    $.bvd = function(dom) {
+        return nv || (nv = new bvd(dom));
+    }
+}(mui))
+			
+			
+			document.getElementById('toshouye').addEventListener('tap',function(){
+           	mui.openWindow({
+           		url:'shouye.html'
+           	})
+           });
+ 
+           document.getElementById('toxuexi').addEventListener('tap',function(){
+           	mui.openWindow({
+           		url:'study.html'
+           	})
+           });
+		
+		     document.getElementById('tozixun').addEventListener('tap',function(){
+           	mui.openWindow({
+           		url:'zixun1.html'
+           	})
+           });
+		
+		     document.getElementById('toMy').addEventListener('tap',function(){
+           	mui.openWindow({
+           		url:'my.php'
+           	})
+           }); 
+           
+           document.getElementById('toOneClass').addEventListener('tap',function(){
+           	mui.openWindow({
+           		url:'oneclass.html'
+           	})
+           }); 
+		</script>
+		
+	</body>
+</html>

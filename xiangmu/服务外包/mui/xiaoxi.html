@@ -1,0 +1,146 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<style type="text/css">
+			.right_area{
+				float: right;
+			}
+			.left_area{
+				float: left;
+			}
+			.clearfix::after{
+				content: "";
+				display: block;
+				clear: both;
+			}
+			.seach{
+				background-color:rgb(0,122,255);
+				position: relative;
+			}
+			.seach input{
+				background-color: rgba(255,255,255,0.5);
+				border-radius: 20px;
+				width: 90%;
+				margin:5px auto;
+				height:30px;
+				text-align: left;
+				margin-left: 5%;
+				position: relative;
+				padding-left: 10%;
+			}
+			input::-ms-input-placeholder{
+			text-align: left;color: rgb(255,255,255);font-size: 15px;}
+input::-webkit-input-placeholder{text-align: left;color: rgb(255,255,255);font-size: 15px;}
+input::-moz-placeholder{text-align: left;color: rgb(255,255,255);font-size: 15px;}
+			.seach span{
+				position: absolute;
+				top: 20%;
+				left: 7%;
+				color: rgb(255,255,255);
+				font-weight: 600;
+			}
+			.people{
+				width: 100%;
+				height: 60px;
+				padding-top:5px ;
+				border-bottom: 1px solid rgba(0,0,0,0.05);
+			}
+			.people .left_area{
+				width:40px ;
+				height: 40px;
+				background-color: red;
+				overflow: hidden;
+				border-radius:100% ;
+				margin-left: 15px;
+			}
+			.people .left_area img{
+				width:40px ;
+				height: 40px;
+			}
+			.people .content{
+				float: left;
+				margin-left: 10px;
+			}
+			.people .content h4{
+				font-size: 15px;
+			}
+			.people .content p{
+				font-size: 12px;
+			}
+			.people .right_area{
+				background-color:red;
+				height: 20px;
+				width:20px ;
+				text-align: center;
+				border-radius:100% ;
+				margin-right:25px;
+				margin-top: 15px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+		    <a class="mui-icon mui-action-back mui-icon-left-nav mui-left" id="toshouye" onclick="toshouye(this)"></a>
+		    <h1 class="mui-title">消息</h1>
+		    <a href=""><span class="mui-icon mui-icon-more" style="float: right;"></span></a>
+		</header>
+		<div class="mui-content">
+		    <div class="seach">
+		    	<span class="mui-icon mui-icon-search"></span>
+		    	<input type="text" name="search" id="search" placeholder="搜索"/>
+		    </div>
+		</div>
+		<a href="xiaoxi2.html">
+			<div class="people clearfix">
+			<div class="left_area">
+				<img src="img2/001.jpg"/>
+			</div>
+			<div class="content">
+				<h4>飞行的DC</h4>
+				<p>你好啊！</p>
+			</div>
+			<div class="right_area">
+				1
+			</div>
+		</div>
+		</a>
+		<div class="people clearfix">
+			<div class="left_area">
+				<img src="img2/IMG_0005.JPG"/>
+			</div>
+			<div class="content">
+				<h4>很溜的DC</h4>
+				<p>嗯</p>
+			</div>
+		</div>
+		<div class="people clearfix">
+			<div class="left_area">
+				<img src="img2/timg.jpg"/>
+			</div>
+			<div class="content">
+				<h4>好好学习</h4>
+				<p>谢谢，知道了</p>
+			</div>
+			<!--<div class="right_area">
+				1
+			</div>-->
+		</div>
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init()
+			
+			document.getElementById('toshouye').addEventListener('tap',function(){
+				mui.openWindow({
+					url:'shouye.html'
+				})
+			})
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<style type="text/css">
+			body{
+				background: url(img2/bg.jpg) no-repeat scroll top left;
+				background-size: 100%;
+			}
+			.inputs{
+				width: 80%;
+				margin: auto;
+				position: relative;
+				margin-top: 60%;
+			}
+			.inputs input{
+				border-radius:15px;
+				background-color: rgba(255,255,255,0.2);
+				border: 1px solid lightskyblue;
+			}
+			.inputs input:active{
+				border: 1px solid deepskyblue;
+			}
+			.mui-switch{
+				position: absolute;
+				top: 0%;
+				right: -6%;
+			}
+			.mui-btn{
+				width: 100%;
+			}
+		</style>
+	</head>
+
+	<body>
+		
+		<div class="inputs">
+			<input type="text" name="username" id="username" placeholder="手机号/邮箱" />
+			<div class="mui-input-row">
+				<input type="text" name="password" id="password" placeholder="支付宝登录密码" />
+			    <div class="mui-switch mui-active">
+			        <div class="mui-switch-handle"></div>
+			    </div>
+			</div>
+			<button type="button" class="mui-btn mui-btn-blue">登录</button>
+		</div>
+		<div class="text">
+			<a href="#" class="left_area">淘宝账户登录</a><a href="#" class="right_area">忘记密码？</a>
+		</div>
+		<button type="button" class="mui-btn mui-btn-blue mui-btn-outlined">注册</button>
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+	</body>
+
+</html>

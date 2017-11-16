@@ -1,0 +1,192 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<style type="text/css">
+			body{
+				background-color: #fff;
+			}
+			.left_area{
+				float: left;
+			}
+			.right_area{
+				float:right;
+			}
+			.clearfix::after{
+				content: "";
+				display: block;
+				clear: both;
+			}
+			#con .list{
+				float: right;
+				margin-top: 50px;
+				font-size: 30px;
+			}
+			header{
+				padding: 10px;
+				height: 80px;
+				width: 100%;
+				background-color: #fff;
+				overflow: hidden;
+				border-radius: 5px;
+				box-shadow: 2px 2px rgba(0,0,0,0.1);
+			}
+			header .img{
+				width: 65px;
+				height: 65px;
+				overflow: hidden;
+				border-radius: 100%;
+			}
+			header .img img{
+				width: 100%;
+			}
+			header .teacher{
+				padding: 10px;
+				margin: auto;
+			}
+			header .teacher #lv,#teacher_name{
+				color: darkblue;
+			}
+			header .teacher #lv{
+				font-size: 13px;
+				padding: 4px 9px;
+				border: 1.2px solid darkblue;
+				border-radius: 15px;
+				margin-right: 5px;
+			}
+			header .teacher #teacher_name{
+				font-weight: bold;
+			}
+			header .teacher p{
+				padding-top: 10px;
+			}
+			.vido{
+				margin-top: -16px;
+			}
+			.tell{
+				padding: 15px;
+			}
+			.tell .people_img{
+				width: 50px;
+				height: 50px;
+				border-radius: 100%;
+				overflow: hidden;
+			}
+			.tell .people_img img{
+				width: 100%;
+			}
+			#text1{
+				padding: 10px;
+				border: 1.2px solid rgba(0,0,0,0.5);
+				border-radius: 5px;
+				color: black;
+				position: relative;
+				z-index: 0;
+				margin-left: 20px;
+			}
+			#left{
+				display: inline-block;
+				width: 14px;
+				height: 28px;
+				padding: 0px;
+				position: relative;
+				font-size: 50px;
+				top: 7px;
+				left:-146px;
+				z-index: 1;
+				background-color: #fff;
+			}
+			footer{
+				height: 50px;
+				background-color: rgba(0,0,0,0.1);
+			}
+			footer #text{
+				width: 80%;
+			}
+			footer button[type="button"]{
+				height: 50px;
+				background-color: dodgerblue;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header class="clearfix">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-left" style="position: absolute;font-size: 40px;color: black;" id="back" onclick="back(this)"></a>
+			<div class="left_area img" style="margin-left: 40px;">
+				<img src="img2/IMG_0005.JPG"/>
+			</div>
+			<div class="left_area teacher">
+				<span id="lv">LV 23</span>
+				<span id="teacher_name" >
+					陈老师
+				</span>
+				<a ><span class="mui-icon mui-icon-checkmarkempty" style="color: white;background-color: yellow;border-radius: 100%;"></span></a>
+				<p> <span class="mui-icon mui-icon-personadd" style="font-size: 15px;">124</span></p>
+			</div>
+			<div class="right_area">
+				
+			</div>
+		</header>
+		<div class="vido" style="margin-top: 10px;">
+			<video width="360px" height="200px" controls="controls" >
+			<!--  <source src="/i/movie.ogg" type="video/ogg" />-->
+			<source src="video/1.mp4" type="video/mp4" />
+			<!--  <source src="/i/movie.webm" type="video/webm" />-->
+		<video>
+</video>
+		</div>
+		<div class="tell clearfix" id="con" style=" height:400px;">
+			<!--<div class="left_area people_img">
+				<img src="img2/u=1374801086,2403386933&fm=27&gp=0.jpg" style="height:50px;"/>
+			</div>
+			<div class="left_area tell_text" style="height: 30px;">
+				<p id="text1">老师，这题怎么做</p>
+			</div>
+			<p id="left">&lsaquo;</p>-->
+			<div class="line1" style="background-color: grey;width: 35%;height: 1px;"></div>
+			<p style="position: absolute;margin-left:41% ;margin-top: -10px;">评论区</p>
+			<div class="line1" style="background-color: grey;width: 35%;height: 1px;margin-left: 65%;"></div>
+		</div>
+		
+			<p id="left" style="left: -160px;">&lsaquo;</p>
+		</div>
+		<footer style="margin-top:0%;"> 
+			
+			<input type="text" name="text" id="text" placeholder="请输入..."  style="margin-top: 5px;"/>
+			<input type="button" name="send" id="send" value="发送"  class="right_area" style="margin-top: 9px;"/>
+		</footer>
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init()
+			
+			document.getElementById('back').addEventListener('tap',function(){
+				mui.openWindow({
+					url:'study.html'
+				})
+			})
+			window.onload = function() {
+			var oBtn=document.getElementById("send");
+			var oText=document.getElementById("text");
+			oBtn.addEventListener("click",Sends);
+			function Sends(){
+				var textValue = oText.value;
+				if(textValue.trim() != "") {
+							var oCon=document.getElementById("con");
+							var option = document.createElement("div");
+							option.className = "list";
+							option.style.width = textValue.length * 10 + "px";
+							option.innerHTML +=textValue;
+							oCon.appendChild(option);
+							oText.value = "";
+							oText.focus();
+						}
+			}}
+		</script>
+	</body>
+
+</html>

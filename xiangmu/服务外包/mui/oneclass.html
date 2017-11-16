@@ -1,0 +1,265 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<style type="text/css">
+			.left_area{
+				float: left;
+			}
+			.right_area{
+				float: right;
+			}
+			.clearfix::after{
+				content: "";
+				display: block;
+				clear: both;
+			}
+			.title{
+				margin-top: 45px;
+				height: 140px;
+				position:relative;
+			}
+			.title .left_area{
+				height: 100px;
+				width: 50%;
+				overflow: hidden;
+				position: relative;
+			}
+			.title .left_area img{
+				width: 100%;
+			}
+			.title .left_area .shoucang{
+				position: absolute;
+				color: rgba(0,0,0,0.7);
+				right: 0;
+				bottom:0;
+				font-size: 10px;
+				background-color:rgba(255,255,255,0.5);
+				padding:0 4px;
+			}
+			.title .right_area{
+				width: 50%;
+				text-align: center;
+				height: 100px;
+			}
+			.title .right_area p{
+				font-size: 10px;
+				color:rgba(0,0,0,0.8);
+				line-height: 0px;
+			}
+			.huang{
+				color: orangered;
+			}
+			#p{
+				padding-left:10% ;
+				text-align: left;
+			}
+			.title #p2{
+				padding-left: 20%;
+				text-align: left;
+				padding-top:10px ;
+				background-color: rgba(0,0,0,0.02);
+				height: 30px;
+			}
+			.title #p2 span{
+				margin-right: 2px;
+			}
+			.title input{
+				width: 100%;
+				height: 40px;
+				border-radius: 10px;
+				background-color: orangered;
+				color: rgb(255,255,255);
+				margin-top: 10px;
+				box-shadow: 2px 1px rgba(0,0,0,0.09);
+			}
+			.menu ul{
+				list-style: none;
+				padding: 0;
+				margin:0 ;
+				margin-top: 20px;
+			}
+			.menu ul li{
+				width: 25%;
+				text-align: center;
+				font-size: 15px;
+				padding: 10px;
+				background-color: #fff;
+			}
+			
+			.menu ul li:first-child{
+				background-color: orangered;
+			}
+			.mui-slider .content{
+				margin: auto;
+				text-align: left;
+			}
+			.mui-slider .content p{
+				color: black;
+			}
+			.hui{
+				color: rgba(0,0,0,0.5);
+			}
+			.mui-slider .content1{
+				width: 70%;
+				margin-top: 30px;
+				line-height: 40px;
+			}
+			.mui-slider .content1 .hui{
+				margin-right: 10px;
+			}
+			.mui-slider .content2{
+				width: 90%;
+				margin: auto;
+				margin-left: 40px;
+				margin-top: 30px;
+			}
+			.mui-slider .content3{
+				width: 80%;
+				margin-top: 30px;
+				text-align: left;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left" href="shouye.html" style="color:black;" id="toshouye" onclick="toshouye(this)"></a>
+		    <h1 class="mui-title">一节课搞定AI入门</h1>
+		</header>
+		<div class="title clearfix">
+			<div class="left_area">
+				<img src="img2/sp2.jpg"/>
+				<div class="shoucang">
+					<span class="mui-icon mui-icon-star" style="font-size: 15px;"></span><span> 收藏</span>
+				</div>
+			</div>
+			<div class="right_area">
+				<h4>一节课搞定AI入门</h4>
+				<div id="p">
+					<p style="margin-top: 10px;margin-bottom: 3px;"><span class="mui-icon mui-icon-person" style="font-size: 16px;"></span>班级50人 | 已报<span class="huang">23</span>人</p>
+					<p><span class="mui-icon mui-icon-location-filled" style="font-size: 15px;"></span>在线授课</p>
+				</div>
+				<div id="p2">
+					<p class="memony"><span class="huang">
+					￥288.00
+				</span><span id="no_memony" style="text-decoration:line-through;">
+					￥485.00
+				</span></p>
+				</div>
+			</div>
+			<input type="button" name="" id="" value="已报名39人 | 立即报名" />
+		</div>
+		<div class="menu">
+			<ul class="clearfix">
+				<!--onclick="star(),tologin()"-->
+				<li class="left_area" onclick="tologin()">报名须知</li>
+				<!--onclick="star(),tologin1()"-->
+				<li class="left_area" onclick="tologin1()">课程详情</li>
+				<!--onclick="star(),tologin2()"-->
+				<li class="left_area" onclick="tologin2()">教学大纲</li>
+				<!--onclick="star()"-->
+				<li class="left_area" >课程评价</li>
+			</ul>
+		</div>
+		<div class="mui-slider">
+			<div class="mui-slider-group">
+				<!--第一个内容区容器-->
+				<div class="mui-slider-item">
+					<div class="content content1">
+						<p><span class="hui">退班原则:</span>第一节课开班前可退班</p>
+						<p><span class="hui">插班原则:</span>随时可插班</p>
+						<p><span class="hui">回放有效期:</span>365天</p>
+					</div>
+				</div>
+				<!--第二个内容区-->
+				<div class="mui-slider-item">
+					<div class="content content2">
+						<p style="font-weight: bold;">一节课搞定AI入门-教学目录</p>
+						<p>主讲:王磊</p>
+						<p>第1讲、&laquo;字词析用诀窍及实战演练&raquo; (上)</p>
+						<p>第2讲、&laquo;字词析用诀窍及实战演练&raquo; (下)</p>
+						<p>第3讲、&laquo;句子析用诀窍及实战演练&raquo; (上)</p>
+						<p>第4讲、&laquo;句子析用诀窍及实战演练&raquo; (上)</p>
+						<p>第5讲、&laquo;阶段复习&raquo;</p>
+					</div>
+				</div>
+				<div class="mui-slider-item">
+					<div class="content content3">
+						<h4 style="text-align: center;font-size: 18px;">教学大纲（20）</h4>
+						<p class="hui" style="color: rgba(0,0,0,0.5);font-size: 10px; text-align: center;">8月27日开课-2018年1月7日结课 共20节，已上11节</p>
+						<p>第1节 &nbsp;第1课时2017年08月27日18:20-<br/>18:50&nbsp; 已结束</p>
+						<p>第2节 &nbsp;第2课时2017年09月03日18:20-<br/>18:50&nbsp; 已结束</p>
+						<p>第3节 &nbsp;第3课时2017年09月10日18:20-<br/>18:50 &nbsp;已结束</p>
+						<p>第4节 &nbsp;第4课时2017年09月17日18:20-<br/>18:50&nbsp; 已结束</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init({
+				swipeBack: true //启用右滑关闭功能
+			});
+			var slider = mui(".mui-slider");
+//			slider.slider({
+//				interval: 5000 //每隔5秒调用一次
+//			});
+			function tologin(e){
+			slider.slider().gotoItem(0);
+			}
+			function tologin1(e){
+			slider.slider().gotoItem(1);
+			}
+			function tologin2(e){
+			slider.slider().gotoItem(2);
+			}
+			var li=document.querySelectorAll("li");
+//			function star () {
+//				for(var i=0;i<li.length;i++){
+//				li[i].style.backgroundColor="white";
+//				li[i].style.color="black";
+//				console.log(i);
+//				li[i].addEventListener("click",function(){
+//					this.style.backgroundColor="orangered";
+//					li[i].style.color="white";
+//				})
+//				console.log(i);
+//			}
+                for(var i = 0; i < li.length; i++) {
+
+				li[i].addEventListener('click', (function(n) {
+
+					return function() {
+						for (var j=0;j<li.length;j++) {
+							if(j==n){
+							li[j].style.backgroundColor = "orangered";
+							
+							
+						}else if(j!=n){
+							li[j].style.backgroundColor="#fff";
+						
+						}
+						}
+						li[n].style.backgroundColor="orangered";
+						
+					};
+				})(i));
+
+			
+			}
+                
+                
+                document.getElementById('toshouye').addEventListener('tap',function(){
+                	mui.openWindow({
+                		url:'shouye.html'
+                	})
+                })
+		</script>
+	</body>
+
+</html>

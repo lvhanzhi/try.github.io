@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+    <style type="text/css">
+    	  	.mui-bar-tab .mui-tab-item.mui-active{
+         color: grey /* 这里放你想要的颜色 */
+}
+.mui-bar .mui-icon:active{
+color: grey
+}
+    	footer{
+				margin-top:50px;
+			}
+			footer a .book{
+				margin-bottom: -4px;
+			}
+			footer a .book_text{
+				margin-top: 0px;
+			}
+			footer a .coffe{
+				margin-bottom: -2px;
+			}
+			footer a .coffe_text{
+				margin-bottom: -3px;
+			}
+			#book2,#coffe2{
+				margin-left: 22px;
+				margin-bottom: 1px;
+				display: none;
+			}
+			#coffe2{
+				margin-bottom: 2px;
+			}
+
+    	li a{
+    		float: left;
+    		position: absolute;
+    		margin-left:10px;
+    		margin-top: -40px;
+    		color: gray;
+    		border: none;
+    		font-size:20px;
+    	}
+        
+         li:nth-child(2){
+         	margin-left:85px;
+         }
+         li:nth-child(3){
+         	margin-left:165px;
+         }
+         li:nth-child(4){
+         	margin-left:230px;
+         }
+         li:nth-child(5){
+         	margin-left:290px;
+         }
+         li:active{
+         	color: black;
+         }
+    	img{
+    		/*position: absolute;*/
+    		border: none;
+    		margin-top:110px;
+    		height:200px;
+    	}
+    	#img1{
+    		width:110px;height: 110px;margin-top:40px;margin-left: 5px;
+    	}
+    	.mui-table-view-cell:after{
+height:0;
+}
+    </style>
+    <script src="js/mui.min.js"></script>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    <script type="text/javascript" charset="utf-8">
+    
+    
+
+    
+    mui.plusReady(function(){
+    //获得slider插件对象
+    var gallery = mui('.mui-slider');
+        gallery.slider({
+  	    interval:2000//自动轮播周期，若为0则不自动播放，默认为0；
+    });
+});
+    
+    
+      	mui.init();
+    </script>
+</head>
+<body>
+	
+	<header class="mui-bar mui-bar-nav" style="background-color: black;height:60px;">
+<!--		<a class="mui-icon mui-action-back mui-icon-left-nav mui-left" style="color: white;" id="toshouye" onclick="toshouye(this)"></a>-->
+		<span class="mui-icon mui-icon-search" style="color: white;"></span>
+		<p style="position: absolute;color: white;left:36px;top:35px;font-weight: bold;">搜索</p>
+		<h1 class="mui-title" style="color: white;font-weight:bold;font-size:22px;top:28%;">学习</h1>
+		<span class="mui-icon mui-icon-email" style="color: white;float: right;font-size:33px;" ></span>
+		<p style="position: absolute;color: white;left:88.5%;top:35px;font-weight: bold;">消息</p>
+	</header>
+	<div class="mui-content" id="subject" style="background-color: white;position:fixed;z-index: 999;width: 100%;margin-top:60px;">
+		<ul class="mui-table-view" id="allUL">
+			<li><a href='#gongkaike' id="li1" onclick="li1(this)" >公开课</a></li>
+			<!--<li><a href='#gongkaike' id="li1" onclick="li1(this)" >公开课</a></li>-->
+			<li><a href='#lingjichu' id="li2" onclick="li2(this)">零基础</a></li>
+			<li><a href='#rumen' id="li3" onclick="li3(this)">入门</a></li>
+			<li><a href='#jinjie' id="li4" onclick="li4(this)">进阶</a></li>
+		    <li><a href='#jingying' id="li5" onclick="li5(this)">精英</a></li>
+		</ul>
+	</div>
+	
+	<!--图片轮播-->
+	<div id="slider" class="mui-slider"  >
+	  <div class="mui-slider-group mui-slider-loop">
+	    <!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+	    <div class="mui-slider-item mui-slider-item-duplicate">
+	      <a href="#">
+	        <img src="image/fffff.jpg" >
+	      </a>
+	    </div>
+	    <!-- 第一张 -->
+	    <div class="mui-slider-item">
+	      <a href="#">
+	        <img src="image/u=1166294761,3360289966&fm=27&gp=0.jpg">    	
+	      </a>
+	    </div>
+	    <!-- 第二张 -->
+	    <div class="mui-slider-item">
+	      <a href="#">
+	        <img src="images/muwu.jpg">
+	      </a>
+	    </div>
+	    <!-- 第三张 -->
+	    <div class="mui-slider-item">
+	      <a href="#">
+	        <img src="images/yuantiao.jpg">
+	      </a>
+	    </div>
+	    <!--第四张-->
+	     <div class="mui-slider-item">
+	      <a href="#">
+	        <img src="images/shuijiao.jpg">
+	      </a>
+	    </div>
+	    <!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+	    <div class="mui-slider-item mui-slider-item-duplicate">
+	      <a href="#">
+	        <img src="images/u=2518663182,3747973217&fm=27&gp=0.jpg">
+	      </a>
+	    </div>
+	  </div>
+	  <div class="mui-slider-indicator">
+	    <div class="mui-indicator mui-active"></div>
+	    <div class="mui-indicator"></div>
+	    <div class="mui-indicator"></div>
+	      <div class="mui-indicator"></div>
+	  </div>
+	</div>
+	
+	<!--公开课-->
+	<div id="gongkaike" class="mui-content" style="border-bottom:27px solid gainsboro;background-color: white;width:100%;height: 100%;">
+		<h4 style="position: absolute;margin-top: -30px;font-weight:bold;margin-left: 10px;">公开课</h4>
+		<a class="mui-icon mui-icon-forward" style="position: absolute;margin-top: -30px;margin-left:90%;color: black;font-weight: bold;" id="toPublicClass" onclick="toPublicClass()"></a>
+		
+	</div>
+	
+		<div id="content1" style="margin-top:-25px; border-bottom: 27px solid gainsboro;background-color: white;">
+			<img id="img1" src="image/24442-20171114102259156-1700577248.png"/ style="width:140px;height: 110px;margin-bottom: 10px;margin-left: 15px;">
+                <p style="width:200px;float: right;height:auto;margin-top:55px;color: black;"><a id="toVideo" onclick="toVideo(this)" style="color: black;">解决less编辑器没有折叠的问题,解决css、js右键菜单压缩异常的问题。</a><br><br><p style="float: right;margin-right:125px;margin-top: -40px;">30人已报名</p><p style="float: right;margin-right: 15px;margin-top: -40px;color: orange;font-weight: bold;">￥288</p></p>
+                
+		</div>
+	<div id="content1" style="margin-top:-25px; border-bottom: 27px solid gainsboro;background-color: white;">
+			<img id="img1" src="image/u=1166294761,3360289966&fm=27&gp=0.jpg" style="width:140px;height: 110px;margin-bottom: 10px;margin-left: 15px;">
+				<p style="width:200px;float: right;height:auto;margin-top:55px;color: black;">解决编辑外部文件时不显示折叠的问题,解决索引进度有时会卡在校验阶段的问题.<br><br><p style="float: right;margin-right:125px;margin-top: -40px;">30人已报名</p><p style="float: right;margin-right: 15px;margin-top: -40px;color: orange;font-weight: bold;">￥288</p></p>
+		</div>
+		<div id="content1" style="margin-top:-25px; border-bottom:5px solid gainsboro;background-color: white;">
+			<img id="img1" src="image/55a48a528109d.jpg"/ style="width:140px;height: 110px;margin-bottom: 10px;margin-left: 10px;">
+				<p style="width:200px;float: right;height:auto;margin-top:55px;color: black;">解决css语法校验错误提示的位置不正确的问题,解决内置web服务器的问题。<br><br><p style="float: right;margin-right:125px;margin-top: -40px;">30人已报名</p><p style="float: right;margin-right: 15px;margin-top: -40px;color: orange;font-weight: bold;">￥288</p></p>
+		</div>
+		
+		<!--零基础-->
+		<div id="lingjichu" class="mui-content" style="border-bottom:27px solid gainsboro;background-color: white;">
+		<h4 style="position: absolute;margin-top: -30px;font-weight:bold;margin-left: 10px;">零基础</h4>
+		<a class="mui-icon mui-icon-forward" style="position: absolute;margin-top: -30px;margin-left:90%;color: black;font-weight: bold;" id="toZero" onclick="toZero(this)"></a>
+	    </div>
+	    <div id="content1" style="margin-top:-25px; border-bottom: 27px solid gainsboro;background-color: white;">
+			<img id="img1" src="image/u=2241449688,3043424962&fm=27&gp=0.jpg"/ style="width:140px;height: 110px;margin-bottom: 10px;margin-left: 10px;">
+				<p style="width:200px;float: right;height:auto;margin-top:55px;color: black;">DCloud 是W3C成员及HTML5中国产业联盟发起单位。<br><br><p style="float: right;margin-right:125px;margin-top: -40px;">30人已报名</p><p style="float: right;margin-right: 15px;margin-top: -40px;color: orange;font-weight: bold;">￥288</p></p>
+		</div>
+		<div id="content1" style="margin-top:-25px; border-bottom: 27px solid gainsboro;background-color: white;">
+			<img id="img1" src="images/gg1.jpg"/ style="width:140px;height: 110px;margin-bottom: 10px;margin-left: 10px;">
+				<p style="width:200px;float: right;height:auto;margin-top:55px;color: black;">HTML5plus Runtime，简称5+ Runtime，是运行于手机端的强化web引擎。<br><br><p style="float: right;margin-right:125px;margin-top: -40px;">30人已报名</p><p style="float: right;margin-right: 15px;margin-top: -40px;color: orange;font-weight: bold;">￥288</p></p>
+		</div>
+		<div id="content1" style="margin-top:-25px; border-bottom: 5px solid gainsboro;background-color: white;">
+			<img id="img1" src="images/z33.jpg"/ style="width:140px;height: 110px;margin-bottom: 10px;margin-left:10px;">
+				<p style="width:200px;float: right;height:auto;margin-top:55px;color: black;">5+ Runtime还支持nview，即原生引擎渲染界面。<br><br><p style="float: right;margin-right:125px;margin-top: -40px;">30人已报名</p><p style="float: right;margin-right: 15px;margin-top: -40px;color: orange;font-weight: bold;">￥288</p></p>
+		</div>
+		
+		<!--入门-->
+		<div id="rumen" class="mui-content" style="border-bottom:27px solid gainsboro;background-color: white;">
+		<h4 style="position: absolute;margin-top: -30px;font-weight:bold;margin-left: 10px;">入门</h4>
+		<a class="mui-action-back mui-icon mui-icon-arrowright" style="position: absolute;margin-top: -30px;margin-left:90%;color: black;font-weight: bold;"></a>
+	    </div>
+	    <div id="content1" style="margin-top:-25px; border-bottom: 27px solid gainsboro;background-color: white;">
+			<img id="img1" src="image/ass.jpg" style="width:140px;height: 110px;margin-bottom: 10px;margin-left: 10px;">
+				<p style="width:200px;float: right;height:auto;margin-top:55px;color: black;">DCloud推出了开源的mui框架，它是目前最高性能和最接近原生体验的手机端框架。<br><br><p style="float: right;margin-right:125px;margin-top: -40px;">30人已报名</p><p style="float: right;margin-right: 15px;margin-top: -40px;color: orange;font-weight: bold;">￥288</p></p>
+		</div>
+		<div id="content1" style="margin-top:-25px; border-bottom: 27px solid gainsboro;background-color: white;">
+			<img id="img1" src="image/fffff.jpg" style="width:140px;height: 110px;margin-bottom: 10px;margin-left: 10px;">
+				<p style="width:200px;float: right;height:auto;margin-top:55px;color: black;">通过HBuilder、5+ Runtime、mui、wap2app，我们很好的解决了HTML5的性工能障碍<br><br><p style="float: right;margin-right:125px;margin-top: -40px;">30人已报名</p><p style="float: right;margin-right: 15px;margin-top: -40px;color: orange;font-weight: bold;">￥288</p></p>
+		</div>
+		<div id="content1" style="margin-top:-25px; border-bottom: 5px solid gainsboro;background-color: white;">
+			<img id="img1" src="image/u=1608279887,292172261&fm=27&gp=0.jpg" style="width:140px;height: 110px;margin-bottom: 10px;margin-left: 10px;">
+				<p style="width:200px;float: right;height:auto;margin-top:55px;color: black;">解决编辑外部文件时不显示折叠的问题,解决索引进度有时会卡在校验阶段的问题.<br><br><p style="float: right;margin-right:125px;margin-top: -40px;">30人已报名</p><p style="float: right;margin-right: 15px;margin-top: -40px;color: orange;font-weight: bold;">￥288</p></p>
+		</div>
+		
+		<!--进阶-->
+		<div id="jinjie" class="mui-content" style="border-bottom:27px solid gainsboro;background-color: white;">
+		<h4 style="position: absolute;margin-top: -30px;font-weight:bold;margin-left: 10px;">进阶</h4>
+		<a class="mui-action-back mui-icon mui-icon-arrowright" style="position: absolute;margin-top: -30px;margin-left:90%;color: black;font-weight: bold;"></a>
+	    </div>
+	    <div id="content1" style="margin-top:-25px; border-bottom: 27px solid gainsboro;background-color: white;">
+			<img id="img1" src="image/u=4208919252,1598039256&fm=27&gp=0.jpg" style="width:140px;height: 110px;margin-bottom: 10px;margin-left: 10px;">
+				<p style="width:200px;float: right;height:auto;margin-top:55px;color: black;">plus.webview都新支持了drag，可以流畅的拖动跟手。<br><br><p style="float: right;margin-right:125px;margin-top: -40px;">30人已报名</p><p style="float: right;margin-right: 15px;margin-top: -40px;color: orange;font-weight: bold;">￥288</p></p>
+		</div>
+		<div id="content1" style="margin-top:-25px; border-bottom: 27px solid gainsboro;background-color: white;">
+			<img id="img1" src="image/u=4216457483,1224516488&fm=27&gp=0.jpg" style="width:140px;height: 110px;margin-bottom: 10px;margin-left: 10px;">
+				<p style="width:200px;float: right;height:auto;margin-top:55px;color: black;">解决less编辑器没有折叠的问题,解决css、js右键菜单压缩异常的问题。<br><br><p style="float: right;margin-right:125px;margin-top: -40px;">30人已报名</p><p style="float: right;margin-right: 15px;margin-top: -40px;color: orange;font-weight: bold;">￥288</p></p>
+		</div>
+		<div id="content1" style="margin-top:-25px; border-bottom: 5px solid gainsboro;background-color: white;">
+			<img id="img1" src="images/u=1475424369,2315353264&fm=11&gp=0.jpg" style="width:140px;height: 110px;margin-bottom: 10px;margin-left: 10px;">
+				<p style="width:200px;float: right;height:auto;margin-top:55px;color: black;">DCloud推出了开源的mui框架，它是目前最高性能和最接近原生体验的手机端框架。<br><br><p style="float: right;margin-right:125px;margin-top: -40px;">30人已报名</p><p style="float: right;margin-right: 15px;margin-top: -40px;color: orange;font-weight: bold;">￥288</p></p>
+		</div>
+		
+		<!--精英-->
+		<div id="jingying" class="mui-content" style="border-bottom:27px solid gainsboro;background-color: white;">
+		<h4 style="position: absolute;margin-top: -30px;font-weight:bold;margin-left: 10px;">精英</h4>
+		<a class="mui-action-back mui-icon mui-icon-arrowright" style="position: absolute;margin-top: -30px;margin-left:90%;color: black;font-weight: bold;"></a>
+	    </div>
+	    <div id="content1" style="margin-top:-25px; border-bottom: 27px solid gainsboro;background-color: white;">
+			<img id="img1" src="images/20171112165941_7115.jpg" style="width:140px;height: 110px;margin-bottom: 10px;margin-left: 10px;">
+				<p style="width:200px;float: right;height:auto;margin-top:55px;color: black;">HTML5plus Runtime，简称5+ Runtime，是运行于手机端的强化web引擎。<br><br><p style="float: right;margin-right:125px;margin-top: -40px;">30人已报名</p><p style="float: right;margin-right: 15px;margin-top: -40px;color: orange;font-weight: bold;">￥288</p></p>
+		</div>
+		<div id="content1" style="margin-top:-25px; border-bottom: 27px solid gainsboro;background-color: white;">
+			<img id="img1" src="image/55c55f77ca4ae.jpg" style="width:140px;height: 110px;margin-bottom: 10px;margin-left: 10px;">
+				<p style="width:200px;float: right;height:auto;margin-top:55px;color: black;">解决less编辑器没有折叠的问题,解决css、js右键菜单压缩异常的问题<br><br><p style="float: right;margin-right:125px;margin-top: -40px;">30人已报名</p><p style="float: right;margin-right: 15px;margin-top: -40px;color: orange;font-weight: bold;">￥288</p></p>
+		</div>
+		<div id="content1" style="margin-top:-25px; border-bottom: 2px solid gainsboro;background-color: white;">
+			<img id="img1" src="image/55a4a99f64419.jpg" style="width:140px;height: 110px;margin-bottom: 10px;margin-left: 10px;">
+				<p style="width:200px;float: right;height:auto;margin-top:55px;color: black;">解决编辑外部文件时不显示折叠的问题,解决索引进度有时会卡在校验阶段的问题.<br><br><p style="float: right;margin-right:125px;margin-top: -40px;">30人已报名</p><p style="float: right;margin-right: 15px;margin-top: -40px;color: orange;font-weight: bold;">￥288</p></p>
+		</div>
+		 
+		 <footer>
+			<nav class="mui-bar mui-bar-tab" >
+			    <a class="mui-tab-item " id="toshouye">
+			        <span class="mui-icon mui-icon-home"></span>
+			        <span class="mui-tab-label">首页</span>
+			    </a>
+			    <a class="mui-tab-item" id="toxuexi" style="color: cornflowerblue;">
+			        <span class="mui-icon mui-icon-compose"></span>
+			        <span class="mui-tab-label">学习</span>
+			    </a>
+			    <a class="mui-tab-item" id="tozixun" >
+			        <span class="mui-icon mui-icon-spinner-cycle mui-spin"></span>
+			        <span class="mui-tab-label">咨询</span>
+			    </a>
+			    <a class="mui-tab-item" id="toMy" >
+			        <span class="mui-icon mui-icon-person"></span>
+			        <span class="mui-tab-label">我的</span>
+			    </a>
+			</nav>
+		</footer>
+<script type="text/javascript">
+	
+	document.getElementById('toPublicClass').addEventListener('tap',function(){
+		mui.openWindow({
+			url:'study1.html'
+		})
+	})
+	
+	document.getElementById('toZero').addEventListener('tap',function(){
+		mui.openWindow({
+			url:'study2.html'
+		})
+	})
+	
+	
+	document.getElementById('toshouye').addEventListener('dblclick',function(){
+		mui.openWindow({
+			url:'shouye.html'
+		})
+	})
+	
+	var oLi1 =document.getElementById("li1");
+	var oLi2 =document.getElementById("li2");
+	var oLi3 =document.getElementById("li3");
+	var oLi4 =document.getElementById("li4");
+	var oLi5 =document.getElementById("li5");
+//  console.log(oLi1);
+//  var color1 = oLi1.style.color;
+//  function li1(e){
+//  	e.target.style.color = "black";
+//  }
+	
+//	function toshouye(e){
+//				window.location.href = "shouye.html";
+//			}
+//			function toxuexi(e){
+//				window.location.href = "study.html"
+//			}
+//			function toziyuan(e){
+//				window.location.href = "zixun1.html"
+//			}
+//			function toMy(e){
+//				window.location.href = "my.html";
+//			}
+
+
+    document.getElementById('toVideo').addEventListener('tap',function(){
+    	mui.openWindow({
+    		url:'index.html'
+    	})
+    })
+
+    document.getElementById('toshouye').addEventListener('tap',function(){
+           	mui.openWindow({
+           		url:'shouye.html'
+           	})
+           });
+ 
+           document.getElementById('toxuexi').addEventListener('tap',function(){
+           	mui.openWindow({
+           		url:'study.html'
+           	})
+           });
+		
+		     document.getElementById('tozixun').addEventListener('tap',function(){
+           	mui.openWindow({
+           		url:'zixun1.html'
+           	})
+           });
+		
+		     document.getElementById('toMy').addEventListener('tap',function(){
+           	mui.openWindow({
+           		url:'my.php'
+           	})
+           }); 
+
+	
+	function li1(e){
+		oLi1.style.color = "black";
+		oLi1.style.borderBottom = "4px solid red";
+		oLi1.style.paddingBottom = "8px"
+		oLi1.style.fontSize = "21px"
+		oLi1.style.fontWeight = "bold"
+		oLi1.style.transition = "all .3s"
+		
+		oLi2.style.cssText = "";
+		oLi3.style.cssText = "";
+		oLi4.style.cssText = "";
+		oLi5.style.cssText = "";
+		
+	}
+	
+	function li2(e){
+		oLi2.style.color = "black";
+		oLi2.style.borderBottom = "4px solid red";
+		oLi2.style.paddingBottom = "8px"
+		oLi2.style.fontSize = "21px"
+		oLi2.style.fontWeight = "bold"
+		oLi2.style.transition = "all .3s"
+		
+		oLi1.style.cssText = "";
+		oLi3.style.cssText = "";
+		oLi4.style.cssText = "";
+		oLi5.style.cssText = "";
+	}
+	
+	function li3(e){
+		oLi3.style.color = "black";
+		oLi3.style.borderBottom = "4px solid red";
+		oLi3.style.paddingBottom = "8px"
+		oLi3.style.fontSize = "21px"
+		oLi3.style.fontWeight = "bold"
+		oLi3.style.transition = "all .3s"
+		
+		oLi1.style.cssText = "";
+		oLi2.style.cssText = "";
+		oLi4.style.cssText = "";
+		oLi5.style.cssText = "";
+	}
+	function li4(e){
+		oLi4.style.color = "black";
+		oLi4.style.borderBottom = "4px solid red";
+		oLi4.style.paddingBottom = "8px"
+		oLi4.style.fontSize = "21px"
+		oLi4.style.fontWeight = "bold"
+		oLi4.style.transition = "all .3s"
+		
+		oLi1.style.cssText = "";
+		oLi2.style.cssText = "";
+		oLi3.style.cssText = "";
+		oLi5.style.cssText = "";
+	}
+	function li5(e){
+		oLi5.style.color = "black";
+		oLi5.style.borderBottom = "4px solid red";
+		oLi5.style.paddingBottom = "8px"
+		oLi5.style.fontSize = "21px"
+		oLi5.style.fontWeight = "bold"
+		oLi5.style.transition = "all .3s"
+		
+		oLi1.style.cssText = "";
+		oLi2.style.cssText = "";
+		oLi3.style.cssText = "";
+		oLi4.style.cssText = "";
+	}
+	
+	var book1=document.getElementById("book1");
+			var book2=document.getElementById("book2");
+			function star () {
+				book1.style.display="none";
+				book2.style.display="block";
+			}
+			function end () {
+				book2.style.display="none";
+				book1.style.display="block";
+				book1.style.marginLeft="22px";
+				book1.style.marginBottom="1px";
+				book1.style.height="19px";
+			}
+			var coffe1=document.getElementById("coffe1");
+			var coffe2=document.getElementById("coffe2");
+			function star1 () {
+				coffe1.style.display="none";
+				coffe2.style.display="block";
+				coffe2.style.marginBottom="3px";
+			}
+			function end2 () {
+				coffe2.style.display="none";
+				coffe1.style.display="block";
+				coffe1.style.marginLeft="22px";
+				coffe1.style.marginBottom="3px";
+			}
+</script>
+</body>
+</html>

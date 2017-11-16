@@ -1,0 +1,258 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<style type="text/css">
+			body {  padding-top: 70px; padding-bottom: 70px;}
+			body {
+				background: url("img2/bg.jpg") no-repeat scroll top left;
+				background-size: 100%;
+			}
+			
+			#content {
+				width: 80%;
+				margin: auto;
+				margin-top: 60%;
+				text-align: center;
+			}
+			
+			#content #username,
+			#password,#tell {
+				border: none;
+				background-color: rgba(255, 255, 255, 0);
+				border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+				border-radius: 0px;
+				margin-bottom: 0px;
+			}
+			
+			#content #username:focus,
+			#password:focus {
+				border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+			}
+			
+			.mui-checkbox input[type=checkbox]:before,
+			.mui-radio input[type=radio]:before {
+				font-size: 23px;
+				top: 9px;
+			}
+			
+			.mui-input-row label {
+				color: rgba(0, 0, 0, 0.5);
+			}
+			
+			.mui-checkbox input[type=checkbox],
+			.mui-radio input[type=radio] {
+				top: 9px;
+			}
+			
+			#login {
+				width: 100%;
+				background-color: cornflowerblue;
+				color: white;
+			}
+			
+			.mui-input-row {
+				margin-bottom: 0px;
+			}
+			
+			a {
+				font-size: 10px;
+			}
+			
+			#forgit {
+				color: gray;
+			}
+			
+			label {
+				text-align: left;
+			}
+			
+			#content {
+				width: 80%;
+				margin: auto;
+				margin-top: 60%;
+				text-align: center;
+			}
+			
+			#content #username,
+			#password,
+			#tell,
+			#yanzheng {
+				border: none;
+				background-color: rgba(255, 255, 255, 0);
+				border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+				border-radius: 0px;
+			}
+			
+			#content #username:focus,
+			#password:focus,
+			#tell:focus,
+			#yanzheng:focus {
+				border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+			}
+			
+			.mui-checkbox input[type=checkbox]:before,
+			.mui-radio input[type=radio]:before {
+				font-size: 23px;
+				top: 9px;
+			}
+			
+			.mui-input-row label {
+				color: rgba(0, 0, 0, 0.5);
+			}
+			
+			.mui-checkbox input[type=checkbox],
+			.mui-radio input[type=radio] {
+				top: 9px;
+			}
+			
+			.mui-input-row {
+				margin-bottom:0px;
+			}
+			
+			a {
+				font-size: 10px;
+			}
+			
+			#forgit {
+				color: gray;
+			}
+			
+			label {
+				text-align: left;
+			}
+			
+			#yanzheng {
+				width: 50%;
+				text-align: center;
+			}
+			
+			#yanzheng_btn {
+				margin-top: 0px;
+				width: 45%;
+				margin-left: 5%;
+				height: 40px;
+				color: white;
+				background-color: cornflowerblue;
+				border-radius: 15px;
+			}
+			
+			#yanzheng_btn:focus,
+			#login:focus {
+				background-color: dodgerblue;
+			}
+			.mui-slider{
+				position: static;
+			}
+			.xian{
+				width: 100%;
+				height: 20%;
+				border-top: 1px solid rgba(0,0,0,0.2);
+				margin: auto;
+				margin-top: 50px;
+			}
+			.xian p{
+				color: grey;
+				width: 40%;
+				height: 20%;
+				background-color: rgba(231,215,225,0.9);
+				margin: auto;margin-top: -10px;
+				margin-bottom: 18px;
+			}
+			.mui-icon{
+				width: 15%;
+			}
+			.mui-input-row label{
+				
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="mui-slider">
+			<div class="mui-slider-group">
+				<!--第一个内容区容器-->
+				 
+				<div class="mui-slider-item">
+					<div id="content">
+						
+						<!--<form action="logincheck.php" method="post">-->
+						<input type="text" name="username" id="username" placeholder="手机号/用户名" />
+						<input type="password" name="password" id="password" placeholder="密码" />
+						<div class="mui-input-row mui-checkbox mui-left">
+							<label>记住密码</label>
+							<input name="checkbox1" type="checkbox" id="jizhumima">
+						</div>
+						<a href="shouye.html"><input type="submit" name="submit" id="login" value="登录"   /></a>
+						<!--</form>-->
+						
+						<a href="#" id="forgit">忘记密码？</a>
+						<a href="#" onclick="tologin2()">注册</a>
+						
+						<div class="xian" style="width:100%;border: none;">	
+							<div id="line1" style="width:31%;height: 1px;background-color: grey;"></div>
+								<div id="line2" style="width:32%;height: 1px;background-color: grey;margin-left:69%;"></div>
+							
+				<p style="background: none;">第三方直接登录</p>
+				<span class="mui-icon mui-icon-weixin" style="color: rgb(134,198,15);"></span>
+				<span class="mui-icon mui-icon-qq" style="color:rgb(18,183,245);"></span>
+				<span class="mui-icon mui-icon-weibo" style="color: rgb(216,51,55);"></span>
+			</div>
+					</div>
+				</div>
+				<!--第二个内容区-->
+				
+				<div class="mui-slider-item">
+					<div id="content">
+						<!--<form action="regcheck.php" method="post">-->
+						<input type="text" name="username" id="username" placeholder="用户名" />
+						<input type="number" name="confirm" id="tell" placeholder="手机号" />
+						<input type="password" name="password" id="password" placeholder="密码" />
+						<input type="text" name="yanzheng" id="yanzheng" placeholder="验证码" /><input type="button" name="yanzheng_btn" id="yanzheng_btn" value="获取验证码" />
+						<input type="submit" name="submit" id="login" value="注册" />
+						<!--</form>-->
+						<a href="#" id="forgit">已有账号？</a>
+						<a href="#" id="toLogin" onclick="tologin()">登录</a>
+					</div>
+				</div>
+				
+			</div>
+			<div class="mui-slider-indicator">
+				<div class="mui-indicator mui-active"></div>
+				<div class="mui-indicator"></div>
+			</div>
+		</div>
+
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init({
+				swipeBack: true //启用右滑关闭功能
+			});
+			var slider = mui(".mui-slider");
+//			slider.slider({
+//				interval: 5000 //每隔5秒调用一次
+//			});
+			
+			var Otologin = document.getElementById('toLogin');
+			function tologin(e){
+			slider.slider().gotoItem(0);
+			}
+			function tologin2(e){
+			slider.slider().gotoItem(1);
+			}
+			mui.plusReady(function() {
+    if(mui.os.ios){
+        plus.navigator.setFullscreen(true);
+    }
+    plus.navigator.closeSplashscreen();
+});
+
+		</script>
+
+	</body>
+
+</html>
